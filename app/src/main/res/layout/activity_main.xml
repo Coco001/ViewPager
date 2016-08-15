@@ -10,9 +10,9 @@
         android:layout_height="180dp">
         <!--viewPager-->
         <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
+            android:id="@+id/vp_pager"
             android:layout_width="match_parent"
-            android:layout_height="120dp">
+            android:layout_height="180dp">
         </android.support.v4.view.ViewPager>
 
         <LinearLayout
@@ -23,42 +23,22 @@
             android:layout_alignParentBottom="true"
             android:padding="5dp"
             >
+            <!--显示标题-->
             <TextView
+                android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="titleName"
                 android:layout_gravity="center_horizontal"
                 />
+            <!--存储圆点-->
             <LinearLayout
+                android:id="@+id/ll_point_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
                 >
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/point_normal"/>
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/point_normal"
-                    android:layout_marginLeft="10dp"/>
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/point_select"
-                    android:layout_marginLeft="10dp"/>
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/point_normal"
-                    android:layout_marginLeft="10dp"/>
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/point_normal"
-                    android:layout_marginLeft="10dp"/>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
